@@ -1,0 +1,17 @@
+include ../partials/header.pug
+body
+        h1 Qui prend quoi ?
+
+h2 Créer un événement
+form(method="post" action="/party")
+    div
+        p
+            label(for="name") Nom de l'événement
+            input(name="name" id="name" required minlength="3" placeholder="Nouvel an")
+        p
+            label(for="author") Auteur
+            input(name="author" id="author" required placeholder="Auteur")
+        p
+            label(for="date") Date
+            input(name="date" id="date" placeholder="Date")
+    button(type="submit") Créer
