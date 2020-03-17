@@ -1,10 +1,80 @@
 @import './vendors/reset';
 @import './config/medias';
 @import './blocs/newParty';
-form {
-  border: 1px solid blue;
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body {
+  background: #111111;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
 
-  div {
-    border: 1px solid red;
+
+input {
+  margin-bottom: 15px;
+  border-radius: 100px;
+  border:0;
+  width: 130px;
+  height: 25px;
+  padding: 10px;
+  &:focus {
+    outline: none;
   }
+}
+button {
+  width: 130px;
+  background: white;
+  border-radius: 0;
+  border: 0;
+  height: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+label {
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Sen', sans-serif;
+}
+
+h2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.title_event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

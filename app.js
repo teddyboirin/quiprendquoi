@@ -34,4 +34,18 @@ app.get('/party/:id', function(req, res) {
 
 })
 
+app.post('/item/:partyId', function(req, res) {
+    axios
+        .post(`${process.env.API_URL}/party/${req.params.partyId}/items`, req.body)
+        .then(() => res.redirect(`/party/${req.params.partyId}`))
+        .catch((err) => res.send(err));
+});
+
+app.get('/item/:partyID/:id', function(req, res) {
+    axios
+        .delete(`${process.env.API_URL}/party/${req.params.partyID}/items/${req.params.id}`)
+        .then(() => res.redirect(`/party/${req.params.partyID}`))
+        .catch((err) => res.send(err));
+});
+
 app.listen(process.env.PORT, () => console.log(`Front app listening on port ${process.env.PORT}!`));

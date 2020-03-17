@@ -1,9 +1,15 @@
 include ../partials/header.pug
 h1 Qui prend quoi ?
-h2 Page événement
-
-h3= party.name
-h4 Créé par #{party.author} - le #{party.date}
-p Créé par #{party.author}
+div.title_event
+    h3= party.name
+    h4 Créé par #{party.author} - le #{party.date}
 label(for="url") Partagez l'événement
-input(id="url" value=`${url}`)
+input(id="url" value=`${url}` data-clipboard=`${url}` data-share-url=`${url}` data-share-title=`${party.name}` data-share-text=`${party.author} vous invite à rejoindre l'évènement ${party.name}`)
+div
+    include ../partials/form_item.pug
+    ul
+        each value in party.items
+            li
+            span #{value.user} prend du #{value.name}
+                form(method="delete" action="/item/" + party._id + "/" + value._id)
+                    button(type="submit") Supprimer
