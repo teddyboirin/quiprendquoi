@@ -1,0 +1,9 @@
+include ../partials/header.pug
+h1 Qui prend quoi ?
+h2 Page événement
+
+h3= party.name
+h4 Créé par #{party.author} - le #{party.date}
+p Créé par #{party.author}
+label(for="url") Partagez l'événement
+input(id="url" value=`${url}`)
