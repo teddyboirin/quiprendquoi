@@ -1,0 +1,10 @@
+@import './vendors/reset';
+@import './config/medias';
+@import './blocs/newParty';
+form {
+  border: 1px solid blue;
+
+  div {
+    border: 1px solid red;
+  }
+}
