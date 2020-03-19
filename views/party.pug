@@ -1,4 +1,6 @@
 include ../partials/header.pug
+    script.
+        party = !{JSON.stringify(party)}
 h1 Qui prend quoi ?
 div.title_event
     h3= party.name
@@ -10,6 +12,6 @@ div
     ul
         each value in party.items
             li
-            span #{value.user} prend du #{value.name}
+            span - #{value.user} prend du #{value.name}
                 form(method="delete" action="/item/" + party._id + "/" + value._id)
                     button(type="submit") Supprimer
