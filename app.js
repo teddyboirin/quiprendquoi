@@ -14,12 +14,15 @@ app.get('/', function(req, res) {
 
 
 app.post('/party', function(req, res) {
-    res.send('Post ok !');
+
     axios
         .post(`${process.env.API_URL}/party`, req.body)
         .then(({ data }) => res.redirect(`/party/${data._id}`))
         .catch((err) => res.send(err));
-})
+        let user = req.body.author;
+        res.render('confirmed', { author: user });
+
+});
 
 app.get('/party/:id', function(req, res) {
     axios
