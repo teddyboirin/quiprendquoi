@@ -17,11 +17,9 @@
 
 ### Sujet : APi de luminosité  (Ambient Light Events)
 
-J'ai décidé de parler de l'api de lumuère ambiante car je trouve que c'est une API qui peut-être utilie pour faire un mode sombre.
-En effet, cet API permet de capter la luminosité ambiante (surement via le capteur de luminisoté de l'appreil) afin de savoir quelle est la valeur de la lumière ambiante.
-
-À noter : j'ai essayé d'utiliser cette API sur mon application afin d'ajouter un theme spécial en fonction de la luminosité, mais celle-ci ne fonctionne pas sur Google Chrome, je pense qu'elle est déstinée aux mobiles.
-
+J'ai décidé de parler de l'api de lumière ambiante car je trouve que c'est une API qui peut être utile pour faire un mode sombre. 
+En effet, cet API permet de capter la luminosité ambiante (surement via le capteur de luminosité de 
+l'appareil) afin de savoir quelle est la valeur de la lumière ambiante.À noter : j'ai essayé d'utiliser cette API sur mon application afin d'ajouter un thème spécial en fonction de la luminosité, mais celle-ci ne fonctionne pas sur Google Chrome, je pense qu'elle est destinée aux mobiles.
 #### Vérifier la disponiblité de la fonctionnalité 
 
 Pour vérifier si la fonctionnalité est présente, on procède comme ceci : 
@@ -37,16 +35,13 @@ puis on éxécute les fonctions qu'on souhaite dans le `callback` :
 
 
 
-Pour conclure cette API semble fonctionnée sur les mobile, mais pas encore sur les ordinateur, hélas.
-Pour contourner ce problème on peut peut-être créer nous même ce type de fonctionnalité mais au lieu d'utiliser un capteur de luminosité, on pourrait utiliser les heures.
-C'est à dire qu'en fonction de l'heure, on pourrait afficher un style css ou un autre (thème sombre ou clair).
-
+Pour conclure cette API semble fonctionnée sur les mobiles, mais pas encore sur les ordinateurs, hélas. Pour contourner ce problème on peut peut-être créer nous-mêmes ce type de fonctionnalité mais au lieu d'utiliser un capteur de luminosité, on pourrait utiliser les heures. C'est-à-dire qu'en fonction de l'heure, on pourrait afficher un style Css ou un autre (thème sombre ou clair)
 # Informations sur le projet
 
 J'ai soulevé un problème, je ne sais pas si c'est moi qui ai mal suivit le tp ou bien un oubli de ta part (ce que je doute), mais lorsque j'ajoute un évènement, je n'ai pas le lien ou l'id de l'évènement afin de pouvoir le consulter.
 
 ### FeedBack
-Je trouve que ce tp est bien mais peut-être un peu trop long etant donné que c'est une nouvelle chose que l'on apprend, et donc devoir se remettre dans le tp pendant 3 jours cause une confusion sur pluiseurs choses (pour ma part).
+Je trouve que ce tp est bien mais est peut-être un peu trop long etant donné que c'est une nouvelle chose que l'on apprend, et donc devoir se remettre dans le tp pendant 3 jours cause une confusion sur plusieurs choses (pour ma part).
 
 Sinon j'ai apprécié le faire et comprendre comment marchent les services workers.
 
